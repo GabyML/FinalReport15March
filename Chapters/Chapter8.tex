@@ -1,0 +1,73 @@
+% Chapter Template
+
+\chapter{Gamma Ray Laser: An Alternative Method} % Main chapter title
+
+\label{Chapter6} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Summary}
+One of the significant issues with the previous design is accumulating enough Positrons to create sufficient Positronium which can then be used to reach the critical density required ($1.2\times 101^{19} cm^3$) to form a Bose-Einstein condensate. The number of Positrons needed is not currently attainable with any Positron beam that is in functional use at the present time. The previous section of unresolved problems describes these issues and the issues that cannot be solved following the lack of Positrons in great detail. Here we describe a method which may be feasible with current technology which does not involve the use of a Positronium Bose-Einstein condensate, and instead involves the use of a free electron laser. 
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+\section{An Alternative}
+The alternative method involves the use of relativistic bound states of electron-positron bound states rather than the requirement for slow Positronium presented in the previous method. These bound states are more easily produced at relativistic energies which are easily reached in the current generation of particle accelerators available. In this schema various methods can be used. The seemingly most feasible method is to fire $\gamma$-rays at high density slabs of material which will then cause pair production to take place. However the main issue with a method like this is the lack of efficiency (similar to issues in the previous schema) which leads to a large loss of Positrons. Current efficiencies for Positron-Electron pair collection is on the order of $10\%$. In order to then cool the $e^+e^-$ pairs to ensure Positron production, a device known as the “Kayak-Paddle Cooler” (KPC) can be used. 
+\newline
+\newline
+A schematic of a KPC device is shown in the figure below. The device uses magnetic fields and RF cavities to sufficiently cool the incoming beam of $e^+e^-$  pairs to provide the correct conditions to allow for the formation of Positronium. The reason for this is that, for Positronium formation to take place, quantum processes need to become dominant which means that the beams need to be brought down to sub-relativistic energies. The magnetic wigglers and RF Cavities are used in an alternating fashion to ensure maximum cooling is achieved. Magnetic wigglers are a magnetic setup of parallel magnets with alternating north and south poles which cause the oscillation of the charged particles within the field. The reason this method can be used to cool is because charged particles moving in such a way in an applied field will cause the emission of synchrotron radiation. These photons will then carry energy away causing a reduction in temperature of said charged particles. The radiofrequency (RF) cavity will then be used to further cool the charged particles via ionisation cooling. RF cavities are normally used for the acceleration of charged particles, however they can be produced in such an arrangement to cause cooling rather than heating. They are also used to cause the bunching of particles passing through the cavity at varying energies. An RF cavity is essentially a metallic chamber which contains within it an electromagnetic field. A generator provides electromagnetic waves which will then become resonant and will build up within the cavity. The resonance at which these waves build up is dependent on the size and shape of the cavity and is specifically calibrated for the particles that will be entering the cavity. The RF cavity is designed such that particles travelling through with a specified energy will not “see” the electromagnetic field permeating the cavity, therefore meaning that these particles will be unaffected. However particles with energy either greater than or less than this energy will be accelerated or decelerated respectively, leading to the bunching of particles. This will also cause the particles energy to be adjusted accordingly, leading to the majority of particles possessing an energy near the ideal energy required to allow the bound state of Positronium to form. A key  factor affecting the efficient running of an RF cavity is that they must be kept in a superconducting state to prevent the loss of energy to electrical resistance. In order to ensure this the metal surrounding the cavity and the generator can be cooled using liquid nitrogen thereby ensuring that they function as superconductors.    
+\newline
+\newline
+The above method in normal usage would produce incoherent $\gamma$-rays. However it can be modified to allow for the generation of a coherent beam of $\gamma$-rays in addition to Positronium atoms. The first main modification is to introduce two counter propagating lasers along the axis of the $e^-e^+$ beam. These two laser beams will act as an undulator for the charged particles. The system will also be tuned such that the radiation emitted in the frame of reference of the charged particles is equal to the ionisation energy of Positronium. This leads to stimulated formation of Positronium via energy loss once the particles emit said radiation. This also acts as a further cooling process within the system.  
+\newline
+\newline
+As has been previously mentioned, oPs will annihilate to produce 3 $\gamma$-photons. In the reference frame of the beam, these photons will have parameterised energy as shown in \ref{8.1}, \ref{8.2}, \ref{8.3}:
+\begin{equation}
+\label{8.1}
+\hbar \omega = \chi m c^2
+\end{equation}
+\begin{equation}
+\label{8.2}
+\hbar \omega_1 = (1+ \eta_1)m c^2
+\end{equation}
+\begin{equation}
+\label{8.3}
+\hbar \omega_2 = (1+\eta_2)m c^2
+\end{equation}
+where $\omega$, $omega_1$, and $\omega_2$  refers to the angular frequency of each photon respectively and $\eta$ and $\chi$ are parameters (Note: $mc^2\simeq0.511 MeV$and $e_I=mc^26.77 eV$). The conservation laws for energy and momentum in the frame of the beam then dictate that:
+\begin{equation}
+\label{8.4}
+\chi + \eta_2 +\eta_2 = \frac{v^2}{c^2} - \epsilon
+\end{equation}
+\begin{equation}
+\label{8.5}
+\chi \hat{k} + (1+\eta_1)\hat{k_1} + (1+\eta_2)\hat{k_2} = 2\frac{\vec{v}}{c}
+\end{equation}
+where the unit vectors denote the associated vectors of the emitted photons. In this schema it is assumed that the energy of one of the emitted photons is negligible. We can then take $\chi << 1$ which then, using momentum conservation, leads us to the conclusion that $\eta_1,\eta_2 << 1$. This then allows us to determine that the hard photons will be emitted in almost opposite directions, with a separation from the normal of the direction of the particle beam of a small angle. With this in mind we can then set $\hat{k_2}=-\hat{k_1}+\hat{\delta}$, and because $v^2 << c^2$, and $\epsilon \simeq10^{-5}$:
+\begin{equation}
+\label{8.6}
+\mid \vec{\delta} \mid = \mid \frac{2 \frac{\vec{v}}{c} - \chi \hat{k} - (\eta_1 -\eta_2\hat{k_1})}{(1+\eta_2)} \mid<<1
+\end{equation}
+The result from \ref{8.6} proves that the emitted photons will be in opposite directions within a cone of aperture that is less than 1 (in the rest frame of the Ps). For this to work it is a necessity that the photons that co-propagate with the electrons have energy equivalent to the Positronium ionisation energy in the rest frame of the electrons. This condition allows for a derivation of the relativistic factor of the electron and positron beams which is given by:
+\begin{equation}
+\label{8.7}
+\gamma_p \simeq \frac{\epsilon^*}{\epsilon}
+\end{equation}
+where $\epsilon^*$ is the rest energy of the co-propagating photons in their reference frame and has been previously defined. As the undulator photons need to be resonant with the spontaneously scattered photons, we can derive a relation between the undulator wavelength and that of the co-propagating photons which then allows us to determine that the undulator could be provided by a microwave beam and the stimulating laser can be provided by an FEL operating at a wavelength of $0.5\AA$. The final step in this schema is to then introduce stimulated annihilation of the formed positronium atoms. 
+\newline
+\newline
+The spontaneous emission of a soft photon in the energy interval and solid angle is given by \ref{8.8}:
+\begin{equation}
+\label{8.8}
+W_{sp} = \frac{f(\chi)\Delta\chi\Delta\Omega}{A \tau 4 \pi}
+\end{equation}
+where the function $f(\chi)$ refers to the spectral distribution calculated by blah shown in figure blah, $A$ is a normalisation factor and $\tau$ is the life span of the positronium. As there is a stimulating electromagnetic field present, the annihilation rate is then proportional to the number of photons present in the mode associated with the energy transition. A ratio can then be calculated for the number of stimulated against the number of spontaneously emitted photons. This ratio can then be evaluated and leads to the determination that the probability of a stimulated event taking place is on the order of $10\%$. The number of stimulated photons produced can then be calculated which is also dependent on the number of positronium atoms. 
+\newline
+\newline
+The whole schema described has a procedural time essentially dependent on two factors; the cooling time of the beams and the lifetime of the positronium atoms. The cooling time can be determined to be on the order of a few tens of seconds using standard parameters in equation blah.
+\newline
+\newline
+This method is potentially feasible with current technology and will allow for the production of a coherent beam of $\gamma$-rays, however explicit power calculations have not been carried out so the laser may not provide the $1kJ$ required. Also no focussing technology currently exists which is still an issue for fine targeting with the beam.

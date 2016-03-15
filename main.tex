@@ -1,0 +1,287 @@
+%%%%%%%%%%%%%%%%
+% Final Report for PHAS3441%
+%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[11pt, english, singlespacing, headsepline,]{FinalReport} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times} % font
+\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % citation style, change if needed
+\addbibresource{references.bib} % The filename of the bibliography (see folder)
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+
+%----------------------------------------------------------------------------------------
+%	MARGIN SETTINGS
+%----------------------------------------------------------------------------------------
+
+\geometry{
+	paper=a4paper, 
+	inner=2.3cm, % Inner margin
+	outer=3.8cm, % Outer margin
+	bindingoffset=2cm, % Binding offset
+	top=1.5cm, % Top margin
+	bottom=1.5cm, % Bottom margin
+	%showframe,% show how the type block is set on the page
+}
+
+%----------------------------------------------------------------------------------------
+%	REPORT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\thesistitle{Annihilation Gamma Ray Laser \\ A Feasibility Report } 
+\supervisor{Dr. David \textsc{Cassidy}}
+\degree{UCL MSci Physics Program} 
+\author{Andreas Angelis \textsc{Christou}, Edward \textsc{Mercer}, Iarom \textsc{Madden}, Gabriela \textsc{May Lagunes}, Mark \textsc{Jenie}, Omree \textsc{Naim}, Poonam \textsc{Sodha}, Sussie \textsc{Sujeeporn}}
+\subject{Physics} 
+\keywords{Annihilation, Gamma Ray, Laser} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
+\university{\href{http://www.ucl.ac.uk/}{University College London}} 
+\department{\href{www.phys.ucl.ac.uk/}{Physics and Astronomy}} 
+\group{\href{http://www.ucl.ac.uk/prospective-students/undergraduate/degrees/physics-msci/}{Group Project 8}} 
+\faculty{\href{https://www.ucl.ac.uk/mathematical-physical-sciences}{UCL Faculty of Mathematial and Physical Sciences}} 
+\hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
+\hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
+\hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
+
+\begin{document}
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+\begin{center}
+
+{\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
+\textsc{\Large PHAS3441: Group Project Final Report}\\[0.5cm] 
+
+\HRule \\[0.4cm] % Horizontal line
+{\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
+\HRule \\[1.5cm] % Horizontal line
+
+\begin{minipage}[t]{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Team Membesr}\\
+\href{http://www.ucl.ac.uk}{\authorname} % Author name - remove the \href bracket to remove the link
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\begin{flushright} \large
+\emph{Board Member} \\
+\href{https://iris.ucl.ac.uk/iris/browse/profile?upi=DBCAS57}{\supname} % Supervisor name
+\end{flushright}
+\end{minipage}\\[3cm]
+ 
+\large \textit{A report submitted in fulfillment of the requirements\\ for the module PHAS3441 of \degreename}\\[0.3cm] % University requirement text
+\textit{sent by}\\[0.4cm]
+\groupname\\\deptname\\[2cm] % Research group name and department name
+ 
+\textit{March the 21st, 2016}\\[4cm] % Date
+%\includegraphics{Logo} % University/department logo - uncomment to place it
+ 
+\vfill
+\end{center}
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	DECLARATION PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{declaration}
+\addchaptertocentry{\authorshipname}
+
+\noindent We, \authorname, declare that this report titled, 'Annihilation Gamma Ray Laser: A Feasibility Report' and the work presented in it are our own. We confirm that:
+
+\begin{itemize} 
+ \item This work was done wholly or mainly while the completion of an undergraduate degree at this University.
+ \item Where we have consulted the published work of others, this is always clearly attributed.
+ \item Where we have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely our own work.
+ \item We have acknowledged all main sources of help.
+\end{itemize}
+ 
+\noindent Signed:\\
+\rule[0.5em]{25em}{0.5pt}\\ % This prints a line for the signature
+\rule[0.5em]{25em}{0.5pt}\\
+\rule[0.5em]{25em}{0.5pt}\\
+\rule[0.5em]{25em}{0.5pt}\\
+\rule[0.5em]{25em}{0.5pt}\\
+\rule[0.5em]{25em}{0.5pt}\\
+\rule[0.5em]{25em}{0.5pt}\\
+\rule[0.5em]{25em}{0.5pt}\\
+ 
+\noindent Date:\\
+\rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
+\end{declaration}
+
+\cleardoublepage
+
+%----------------------------------------------------------------------------------------
+%	RESPONSIBILITY ALLOCATION PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{responsibility}
+\addchaptertocentry{\responsibilityname}
+
+\noindent The challenges identified during this project were divided per subject. These were distributed as follows. However, it is worth noting that every member of the team was involved in the general development and decision making process of the project. 
+
+\begin{itemize} 
+ \item Positron and Positronium Production and Storage: Mark Jenei, Poonam Sodha and Iarom Madden.
+ \item Bose-Einstein Condensate: Gabriela May Lagunes, Omree Naim and Sujeeporn Tuntipong.
+ \item Laser Engineering and Gamma-Ray Optics: Andreas Angelis Christou and Edward Mercer.
+ \item An Alternative Method: Andreas Angelis Christou and Omree Naim.
+ \item Applications, Manufacturing Cost and Production Time Scale: Andreas Angelis Christou, Gabriela May Lagunes and Edward Mercer.
+\end{itemize}
+ 
+\noindent The general administration of the project and the communication process with the Board and other groups was coordinated by Gabriela May-Lagunes and Poonam Sodha.\\
+ 
+\end{responsibility}
+
+\cleardoublepage
+
+%----------------------------------------------------------------------------------------
+%	QUOTATION PAGE
+%----------------------------------------------------------------------------------------
+
+\vspace*{0.2\textheight}
+
+\noindent\enquote{\itshape There is an extremely powerful force that, so far, science has not found a formal explanation to. It is a force that includes and governs all others, and even behind any phonomenon operating in the Universe and has not yet been identified by us. The universal force is Love.}\bigbreak
+
+\hfill Albert Einstein
+
+%----------------------------------------------------------------------------------------
+%	EXECUTIVE SUMMARY 
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+
+\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+
+The aim of this report is to determine the feasibility of the production of an annihilation ? ray laser via the use of Positronium by summarising any and all technological challenges currently present that are obstructing the construction of said device. A tangential aim is to also summarise any alternatives to the primary schema that will be investigated to develop the annihilation laser. In addition to this, a secondary aim was to conduct a costing study to provide economic context to the production of the laser, along with an idea of the length of time that would be required to produce the laser. The final aim of the report was to provide modern processes in which an annihilation ? ray laser would have been specifically useful.
+In order to carry out the first aim of the production of the laser, a set of objectives had to be met. First and foremost research needed to be conducted to determine a method suitable for the creation and storage of a large number of Positrons (on the order of ~1017). This research also included the investigation of any health and safety requirements that needed to be met to deal with the issue of radiation doses presented by the Positron production (e.g. investigating the development of shielding to attenuate Bremsstrahlung radiation) . Upon completion of this objective, the next objective uses the aforementioned Positrons to create the  Positronium in a large enough density to allow for condensation (or at a low enough temperature). This objective required the investigation into the required conditions for Bose-Einstein condensation of Positronium (e.g. critical density, critical temperature etc). Following the research into the condensation of the Positronium into a Bose-Einstein condensate state, further research then had to be conducted to determine a method that could be used to detect that the Positronium had actually attained this exotic state of matter, assuming that the detection of the transition  is physically possible. Once detection of the BEC formation is complete, the next objective to be met is to research a scheme that would allow spin flipping of the Positronium forming the BEC that would then cause stimulated annihilation to take place. This stimulated annihilation essentially forms the basis of the laser and from here the physics becomes more theoretical and lacks experimental support. The next objective was to conduct research into the area of ? ray optics which is necessary for the following two reasons; firstly the annihilation of the BEC would cause emission of ? rays in random directions thereby requiring a reflection or refraction mechanism to be in place to prevent the loss of ~50\% of the energy produced in annihilation, and secondly a focussing mechanism would also need to be developed to focus the ? rays into a coherent beam which could then be used by the consumer as required. A secondary objective of the ? ray optics section is the requirement of suitable shielding to be produced in conjunction with the laser to prevent the irradiation of any users by any stray ? rays that could potentially be emitted from the laser. The final objective is to investigate the field of ? ray detectors to ascertain if there is a detector of suitable durability that could be used to measure the output power of the ? ray laser. These objectives allowed for completion of the first aim.
+The laser production aim also required calculations to be made to ensure that the schema that we had chosen to use would guarantee that a kilojoule laser would  be produced. These calculations included, but were not limited to; determining the upper limit to the amount of Positronium that we could produce in a beam based on the most active Positron source currently available, the calculation of the critical densities and temperature for the condensation of Positronium etc. These calculations were carried out  after the previously discussed was complete to ensure that the most efficient methods were used throughout rather than using older processes that have then been superseded by modern processes. There were some cases where results may not be presented due to a lack of mathematical background required to carry out the rigorous calculations. A supplementary objective was also the potential computational simulation of the Positron and Positronium beams using SIMION. This would have been done to aid in the providing of precise results that would aid in the determination of the feasibility of this schema in creating the laser.  
+
+The aim of producing a costing report was met by successively determining the cost of current and contemporary experiments for each applicable section, and also by investigating if there have been any reductions in costs of experimental components to date (e.g. reduction in the cost Gallium which would be used for Positron production). Any components currently in development also needed to be investigated (e.g. the Silicon prisms in the ? ray optics section), and if costs were unavailable then they were approximated via usage of any public knowledge on the research grants provided to studies into said developing component. A Gantt chart was also produced by estimating relative time scales for completion of each section previously discussed. This required the investigation into the length of time taken to complete any previous experiments that contained components that would be used to produce the laser. In the case of areas that are still in development this was again estimated based on peer reviewed papers which provided time scales for the production of the necessary components. These two objectives allowed for the second aim of the report to be met.
+In order to meet the final aim of the report, a discussion took place to determine the consensus of the group on what fields would find the most use of an annihilation ? ray laser. Once a consensus had been reached any use of lasers in these areas was then specifically researched to determine if a ? ray laser may have been more appropriate for the same task. In terms of applications in which an annihilation ? ray laser would be a definitive requirement, previously used papers were used to determine if they were in the process of developing a ? ray laser for a specific usage that only the laser was capable of meeting. Research was also conducted into current laser usages to determine if there were tasks that modern lasers were not capable of carrying out due to power limitations. If so then these tasks may be tasks that only a ? ray laser would be capable of. Also any tasks requiring a very high degree of precision were investigated as these would be tasks that only a ? ray laser would be capable of conducting due to the small wavelength of the photons that the beam consists of. 
+
+The final outcome of this project is the determination that the production of an annihilation ? ray laser using the Bose-Einstein condensation of Positronium is not possible with the currently available technology. The main reasons for this are covered in detail on page XX in the Unresolved Problems section. However, this report also presents a possible alternative method that may be feasible with current technology as it eliminates the main issue presented in this report which is the generation of a Bose-Einstein condensate of Positronium which in turn is an issue caused by the inability to produce Positrons at a sufficient density within the beam to ensure the critical density of Positronium is then reached.
+
+\end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\begin{acknowledgements}
+\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
+
+The members of the Group Project 8 would like to thank Dr. David Cassidy for his support and advice during the production of the this document. Special thanks to Dr. Paul Bartlett and Prof. Allen Mills for their comments and discussions during the development of the project. Finally, we thank the department for the opportunity of working in this subject.  
+
+\end{acknowledgements}
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Prints the main table of contents
+
+%\listoffigures % Prints the list of figures
+
+%\listoftables % Prints the list of tables
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+%\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
+
+%\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere\\
+%\textbf{WSF} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or\\
+
+%\end{abbreviations}
+
+%----------------------------------------------------------------------------------------
+%	PHYSICAL CONSTANTS/OTHER DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+%\begin{constants}{lr@{${}={}$}l} % The list of physical constants is a three column table
+
+% The \SI{}{} command is provided by the siunitx package, see its documentation for instructions on how to use it
+
+	%Speed of Light & $c_{0}$ & \SI{2.99792458e8}{\meter\per\second} (exact)\\
+%Constant Name & $Symbol$ & $Constant Value$ with units\\
+
+%\end{constants}
+
+%----------------------------------------------------------------------------------------
+%	SYMBOLS
+%----------------------------------------------------------------------------------------
+
+%\begin{symbols}{lll} % Include a list of Symbols (a three column table)
+
+%$a$ & distance & \si{\meter} \\
+%$P$ & power & \si{\watt} (\si{\joule\per\second}) \\
+%Symbol & Name & Unit \\
+
+%\addlinespace % Gap to separate the Roman symbols from the Greek
+
+%$\omega$ & angular frequency & \si{\radian} \\
+
+%\end{symbols}
+
+%----------------------------------------------------------------------------------------
+%	DEDICATION
+%----------------------------------------------------------------------------------------
+
+\dedicatory{Dedicated to the younger self of any person that has contributed to science in one way or another. All of them were at the beginning the same thing: just a bunch of students.} 
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{thesis} % Return the page headers back to the "thesis" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\include{Chapters/Chapter1}
+\include{Chapters/Chapter2} 
+\include{Chapters/Chapter3}
+\include{Chapters/Chapter4} 
+\include{Chapters/Chapter5} 
+\include{Chapters/Chapter6}
+\include{Chapters/Chapter7}
+\include{Chapters/Chapter8}
+\include{Chapters/Chapter9}
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+\include{Appendices/AppendixA}
+%\include{Appendices/AppendixB}
+%\include{Appendices/AppendixC}
+%\include{Appendices/AppendixD}
+%\include{Appendices/AppendixE}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\printbibliography[heading=bibintoc]
+
+%----------------------------------------------------------------------------------------
+
+\end{document}  

@@ -1,0 +1,77 @@
+% Chapter Template
+
+\chapter{Gamma Ray Laser: Gamma Ray Optics} % Main chapter title
+
+\label{Chapter4} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{A Summary of $\gamma$-ray Optics}
+
+The construction of a $\gamma$-ray laser requires development in the field of  $\gamma$-ray optics. This is essential for two significant reasons. Firstly, once stimulated annihilation has taken place, the resulting $\gamma$-rays will be emitted in multiple random directions. This entails the requirement of either the reflection or refraction of said $\gamma$-rays to prevent the loss of  ~50$\%$ of the energy of the laser. If this refraction of the rays has then taken place, there will then be at least two independent beams of $\gamma$-rays which will then need to be made coherent to prevent destructive interference which could contribute to another large loss of power of the laser. Finally, a lens will be required to allow for the focussing of the laser to allow for more precise targeting and to prevent dispersion of the beam over a wide area.The difficulties of $\gamma$-ray optics arise due to the inherent properties of $\gamma$-rays. $\gamma$-rays are highly energetic and possess a small wavelength which therefore means that they would normally pass through the space between atoms of most materials, thereby indicating that reflection and refraction via conventional mirrors and prisms is not possible. However contemporary research into this area has demonstrated that, for high energy $\gamma$-rays, there may be a ‘significant’ level of refraction which could be useful in the production of a $\gamma$-ray laser. 
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+\section{Theory of $\gamma$-ray Optics}
+
+The refraction or reflection of $\gamma$-rays, as with any electromagnetic radiation, is dependent on the index of refraction of the material being used to conduct said process. The refractive index is dependent on the energy of the incident radiation and is described in \ref{e1}, 
+\begin{equation}
+\label{e1}
+n(E) = 1 - \delta(E)-i\beta(E)
+\end{equation}
+where the imaginary part describes absorption whilst the real part describes the refraction. The Fresnel equations, as shown in equations \ref{e2} and \ref{e3} where p refers to parallel polarisation and s refers to normal polarisation, then dictate that reflection also depends on the refractive index. 
+\begin{equation}
+\label{e2}
+r_p =\frac{n^2\sin\alpha-\sqrt{(n^2-\cos^2\alpha)}}{n^2\sin\alpha+\sqrt{(n^2-\cos^2\alpha)}}
+\end{equation}
+\begin{equation}
+\label{e3}
+r_s =\frac{\sin\alpha-\sqrt{(n^2-\cos^2\alpha)}}{\sin\alpha+\sqrt{(n^2-\cos^2\alpha)}}
+\end{equation}
+Using the Fresnel equations, the reflectivity for a surface can be determined by taking the modulus of \ref{e2} and \ref{e3}, where light polarised in differing directions will have differing reflectivity.  For low energy radiation, for example in the optical spectrum, the real part of \ref{e1} is greater than unity, allowing for easy design of refractive materials and mirrors for these frequencies. However as the wavelength of the incident radiation decreases (as the energy increases), the reflectivity at the normal ($\alpha$ = $90^o$) decreases rapidly. This is especially the case for high energy radiation such as X-Ray and $\gamma$. However by applying Snell’s law we can determine that the refraction angle as measured from the normal to the surface will be greater than $90^o$ if the condition in \ref{e4} is satisfied:
+\begin{equation}
+\label{e4}
+n_r = 1 - \delta < 1
+\end{equation}
+which is the same as saying that total internal reflection takes place when t where tis the critical angle and can be determined using \ref{e5}:
+\begin{equation}
+\label{e5}
+\cos\alpha_t = 1 - \delta \textrm{ or } \alpha_t = \sqrt{2\delta} \textrm{ if } \delta<<1
+\end{equation}
+\newline
+\newline
+The previous equations describe the mathematics of a grazing incidence telescope which essentially uses reflection from curved surfaces to focus light. The value of $\delta$ can also be roughly estimated using \ref{e6}:
+\begin{equation}
+\label{e6}
+\delta = -2.7 \frac{\rho Z \lambda^2}{A}
+\end{equation}
+where $Z$ and $A$ are the atomic number and atomic weight respectively, and $\rho$ is the density of the material. It can clearly be seen that $\delta$ decreases rapidly with increasing energy , converging towards $0$. The focal length of an array of lenses is dependent on $\delta$ via the relation given in \ref{e7}:
+\begin{equation}
+\label{e7}
+f=\frac{R}{2 \delta N}
+\end{equation}
+where $R$ is the radius of curvature of the concave lens and $N$ is the number of lenses in use. For X-Rays, a reasonable focal length is attainable via the use of hundreds of lenses.
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+
+\section{Development of $\gamma$-ray Optics}
+The area of $\gamma$ ray optics is still continuously under research and is currently being developed from the area of  X-Ray optics. X-Ray optics is also an area under research, however lenses and reflective processes are in existence for X-Rays. There is currently one “hard” energy X-Ray mirror in operation in the Nuclear Spectroscopic Telescope Array that operates in an energy range of 3-79 KeV(reference The Nuclear Spectroscopic telescope array (NuSTAR) High energy X-Ray mission). This X-Ray mirror is based on the Wolter I design which uses the previously described grazing incidence principle to image distant objects. The principle used is from equation \ref{e7} where multiple glass optics coated in multiple layers of metal (e.g gold) at different depths to provide a suitable focal length with an increased field of view. The reason for the depth grading of the multilayer optics is to increase the grazing angle of the incident radiation. 
+\newline
+\newline
+Previous findings for $\gamma$-rays had originally implied that $\delta$ from \ref{e1} was always negative for high energy radiation. However a recent paper has demonstrated that, if the energy of the $\gamma$ radiation is greater than $0.7 MeV$, then $\delta$ changes sign which leads to $n$ being greater than 1. By using Silicon prisms, refraction on the order of $10^{-9}m$ was achieved with $\gamma$-rays of energy up to $2 MeV$. This refraction was verified by the measurement of a parallel beam travelling through air below the beam travelling through the prism. These findings are explained via Delbruck scattering, where the photon directly interacts with the electric field of the nucleus of the incident atom, causing virtual pair-production to take place. The photon is then re-scattered by this virtual pair. In principle, these findings could be used to develop refractive Silicon prisms. Further study also needs to be undertaken to investigate the use of higher $Z$ materials such as gold as a rudimentary calculation indicates a $\delta$ value of $3\times10^{-5}$ in the energy range of $1 MeV$. A lens with this property has a theoretical focal length of $3m$ and could be used to focus the $\gamma$-rays produced by the annihilation laser for focussed usage.
+\newline 
+\newline
+Although it is not possible to reflect the $\gamma$-rays, a beam of the desired energy can be achieved through the annihilation of double the amount of Ps, which in itself presents its own challenges. Notably, it will also increase the amount of shielding required in the reverse direction of the beam and it will also require a substantially larger amount of positrons to be produced. There have been advancements in the material that can be used for shielding. The most common material used is lead, which is convenient as it is both cheap and easily available. Lead provides shielding which is approx $20-30\%$ better than other materials such as soil, though more exotic materials such as depleted uranium and lead foams have demonstrated a much greater ability to absorb $\gamma$-rays. There are also some novel lightweight shielding materials made from aluminium that can be used. However, in terms of cost effectiveness, lead remains the most economic material. 
+\newline
+\newline
+In terms of $\gamma$-rays, shielding can be easily accomplished via the use of lead plates with a thickness on the order of ~4 inches. \ref{e8} was used to determine the thickness necessary for attenuation using lead:
+\begin{equation}
+\label{e8}
+I_x = I_0 \exp(-\mu x)
+\end{equation}
+where $I_x$ is the intensity of the photon after attenuation, $I_0$ is the initial energy of the photon, $\mu$ is the Linear Attenuation Coefficient of Lead for the specified initial energy, and $x$ is the thickness of material needed for the required level of attenuation. This level of shielding will lead to a $90\%$ attenuation of $\gamma$-rays at the specified energy level. However in order to ensure that the risk of irradiation is low, the thickness of lead shielding is doubled to 4 inches. For convenience, rather than using a 4 inch solid plate of lead around the room, lead plates of 0.5 inches would instead be used. This then acts as a cost saving mechanism because, once the outer plate has begun to deteriorate due to continuous exposure, it can then be removed and disposed of, exposing the next level of plating. An additional plate can then be added at the rear of the plating wall. It should be noted however that the shielding required is not limited to shielding $\gamma$-rays. There will be high energy $e^+$ particles that will miss the Silica target, and are therefore free to impact the surrounding walls of the room, therefore leading to the creation of Bremsstrahlung radiation. This electromagnetic radiation is created when charged particles are deflected by other charged particles, and will occur in this case if the $e^+$ particles are deflected by a positively charged nucleus. In order to shield against this radiation, it is preferable to use a low $Z$ element. It was determined that the most convenient material to use would be liquid water. The convenience of this is clear as water can easily be pumped out and replaced. To provide complete shielding the layout would be a wall of lead surrounding the equipment, then a pipe containing a sufficient amount of water (a pipe with a diameter of ~6 inches), with a final wall of lead plating after the pipe. The reasoning behind this was to ensure that the first wall of lead would shield against any $\gamma$-rays that are emitted in the wrong direction and so cannot be used in the lasing process. The water layer would then shield against any Bremsstrahlung radiation that is generated. Finally the outer layer of lead would then shield against any electromagnetic radiation of high energy that may be produced due to the Bremsstrahlung radiation and to prevent any final leakage of $\gamma$-rays.
